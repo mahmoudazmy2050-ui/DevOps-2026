@@ -32,9 +32,9 @@ export function Layout() {
               className="grid h-8 w-8 place-items-center rounded-lg text-sm font-black text-white"
               style={{ background: 'var(--accent)' }}
             >
-              K
+              A
             </span>
-            KMA Curriculum
+            AzMy-Dev-Ops Roadmap
           </a>
 
           <nav className="order-3 flex w-full items-center gap-1 md:order-none md:w-auto">
