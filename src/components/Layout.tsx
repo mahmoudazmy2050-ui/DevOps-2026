@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from 'react'
-import { NavLink, Outlet, useNavigate } from 'react-router-dom'
+import { NavLink, Outlet, useNavigate, Link } from 'react-router-dom'
 
 const navItems = [
   { to: '/', label: 'الرئيسية', end: true },
@@ -27,7 +27,7 @@ export function Layout() {
         }}
       >
         <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3">
-          <a href="/" className="flex items-center gap-2 text-lg font-black tracking-tight">
+          <Link to="/" className="flex items-center gap-2 text-lg font-black tracking-tight">
             <span
               className="grid h-8 w-8 place-items-center rounded-lg text-sm font-black text-white"
               style={{ background: 'var(--accent)' }}
@@ -35,7 +35,7 @@ export function Layout() {
               A
             </span>
             AzMy-Dev-Ops Roadmap
-          </a>
+          </Link>
 
           <nav className="order-3 flex w-full items-center gap-1 md:order-none md:w-auto">
             {navItems.map((item) => (
