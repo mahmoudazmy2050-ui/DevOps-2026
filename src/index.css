@@ -1,0 +1,69 @@
+@import 'tailwindcss';
+
+:root {
+  --bg: #f6f5f2;
+  --surface: #ffffff;
+  --surface-2: #efede8;
+  --border: #e3e0d9;
+  --text: #1c1917;
+  --muted: #6b6560;
+  --accent: #b30000;
+  --accent-strong: #8f0303;
+  --accent-soft: rgba(179, 0, 0, 0.08);
+  --ok: #1a7f37;
+  --warn: #9a6700;
+  --code-bg: #18181b;
+  --code-text: #e4e4e7;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #131316;
+    --surface: #1c1c21;
+    --surface-2: #26262c;
+    --border: #33333a;
+    --text: #f4f4f5;
+    --muted: #a1a1aa;
+    --accent: #ef4444;
+    --accent-strong: #dc2626;
+    --accent-soft: rgba(239, 68, 68, 0.12);
+    --ok: #4ade80;
+    --warn: #fbbf24;
+    --code-bg: #101013;
+    --code-text: #d4d4d8;
+    color-scheme: dark;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Cairo', 'Segoe UI Variable', 'Segoe UI', Tahoma, system-ui, sans-serif;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+code,
+pre,
+kbd,
+.mono {
+  font-family: 'Cascadia Code', 'Consolas', ui-monospace, monospace;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
